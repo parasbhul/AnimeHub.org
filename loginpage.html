@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+        <title>Anime Hub</title>
+        <link rel="stylesheet" href="backFORlogin.css"
+        
+    </head>
+
+    <body>
+       <main><div>
+        <img src="logo002.png" alt="logo" height="400px">
+        </div></main>
+        
+        <div class="container">
+    <div id="user">
+        <input type="text"placeholder="Username">
+    </div> 
+
+        <div id="pass">
+            <input type="password"placeholder="Password">
+        </div>
+
+        <div id="login">
+            <input type="submit" onClick="login()" value="Login">
+        </div>
+    </div>
+        
+
+         <script>
+function login()
+{
+   var usernm=document.getElementById("user").value;
+   var passwd=document.getElementById("pass").value;
+    
+    if(usernm == passwd)
+    {
+         window.location.assign("homepage.html")
+        alert("login sucsess full");
+       
+       
+        
+        }
+     else
+    {
+       alert("please check your password or your user name");
+}}
+</script>
+
+
+    </body>
+</html>

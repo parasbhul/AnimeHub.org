@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Anime Hub </title>
+    <link rel="stylesheet"href="backFOR1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css" integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div id="navbar">
+
+ 
+
+<div class="logo">  
+    <img src="logo002.png" alt="logo" height="150px"width="250" id="img1">
+</div>
+  
+<div class="search">
+    <input type = "text" placeholder="Search here">
+    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+</div>
+
+</div>
+
+
+<div>
+    <h2 id="he1">Top Animes</h2>
+</div>
+
+
+<main>
+    <a href="runchyroll.com/series/G9VHN9PPW/dragon-ball-z?srsltid=AfmBOoqVUVUiUWpaWZ2rlYS4WCsXHljdDnOqGTWKoGAfD_o8JXEKuIyj"target="_main"><img src="dragonball.jpg"class="slide" alt="" ></a>
+
+    <a href="https://www.netflix.com/in/title/81409869"target="_main"><img src="monster.jpg"class="slide" alt="" ></a>
+
+    <a href="https://www.crunchyroll.com/series/GR5VXQ8PR/bungo-stray-dogs?srsltid=AfmBOoqWQmW1ujap-jj5GRzPU9p_G5Q-_KJ-8djCMKyYUn-vFuH_RcMD"target="_main"><img src="bungo.jpg"class="slide" alt=""></a>
+
+    <a href="https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba?srsltid=AfmBOornRRq3BrXlBwOGdorX5XqOTcavHjNvgcau5iRAwJsUL6nszduQ"target="_main"><img src="demon.jpg"class="slide" alt=""></a>
+
+    <a href="https://www.crunchyroll.com/series/G9VHN9PK3/your-name?srsltid=AfmBOoqsER21JM2z1Krj_xosRMSUe60mrNcD2VE6h1gklcjpLOa6U-fd"target="_main"><img src="yourname.jpg"class="slide" alt=""></a>
+</main>
+<br>
+
+
+<div class="nav">
+<button onclick="goPrev()">
+    prev
+</button>
+<button onclick="goNext()">
+    next
+</button>
+</div>
+
+<script>
+    const slides = document.querySelectorAll(".slide")
+    var counter = 0;
+    slides.forEach(
+        (slide, index) => {
+            slide.style.left = `${index * 100}%`
+        }
+    )
+
+const goPrev = () => {
+    counter--
+    slideImage()
+
+}
+
+const goNext = () => {
+    counter++
+    if (counter >= slides.length) {
+        counter = 0;
+    }
+    slideImage()
+
+}
+
+
+const slideImage = () => {
+    slides.forEach(
+        (slide) => {
+            slide.style.transform = `translateX(-${counter * 100}%)`
+        }
+    )
+}
+
+
+
+</script>
+
+<br><br>
+<h2>Populer Anime</h2>
+
+<div class="container">
+    <div class="box"><a href="https://www.crunchyroll.com/series/G63VGG2NY/bleach?utm_campaign=media_actions&utm_medium=deep_link&utm_source=google"><img src="bleach.jpg" height="400" width="300"></a> </div>
+    <div class="box"><a href="https://www.crunchyroll.com/series/GY9PJ5KWR/naruto?srsltid=AfmBOorVts28SkMkMn8gTkTDgyXLDqFedNFqTSa65xH1YO5kgxGqNfxs"><img src="naruto.jpg" height="400" width="300"></a></div>
+    <div class="box"><a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece?srsltid=AfmBOopNy38nb8kmRcC0I8eDKtheGuwdGhc2KPQF2HmYpsLoNZRTe5RJ"><img src="one.jpg" height="400" width="300"></a></div>
+    <div class="box"><img src="solo.jpg" height="400" width="300"></div>
+    <div class="box"><img src="sakamoto.jpg" height="400" width="300"></div>
+    <div class="box"><img src="jjk.jpg" height="400" width="300"></div>
+    <div class="box"><img src="bungo.jpg" height="400" width="300"></div>
+</div>
+
+<h2>Populer movie</h2>
+
+<div class="container">
+    <div class="box"><img src="yourname.jpg" height="400" width="300"></div>
+    <div class="box"><img src="i want.jpg" height="400" width="300"></div>
+    <div class="box"><img src="dead apple.jpg" height="400" width="300"></div>
+    <div class="box"><img src="totoro.jpg" height="400" width="300"></div>
+    <div class="box"><img src="weathering.jpg" height="400" width="300"></div>
+    <div class="box"><img src="silent.jpg" height="400" width="300"></div>
+    <div class="box"><img src="vinlandsaga.jpg" height="400" width="300"></div>
+</div>
+
+<h2>Most Watched</h2>
+
+<div class="container">
+    <div class="box"><img src="windbr.jpg" height="400" width="300"></div>
+    <div class="box"><img src="spyxfamily.jpg" height="400" width="300"></div>
+    <div class="box"><img src="sherlock.jpg" height="400" width="300"></div>
+    <div class="box"><img src="tokyoghoul.jpg" height="400" width="300"></div>
+    <div class="box"><img src="tokyorevengers.jpg" height="400" width="300"></div>
+    <div class="box"><img src="violet.jpg" height="400" width="300"></div>
+    <div class="box"><img src="sangri la front.jpg" height="400" width="300"></div>
+</div>
+
+<h2>Best Anime</h2>
+
+<div class="container">
+    <div class="box"><img src="onep.jpg" height="400" width="300"></div>
+    <div class="box"><img src="pluto.jpg" height="400" width="300"></div>
+    <div class="box"><img src="monster.jpg" height="400" width="300"></div>
+    <div class="box"><img src="noragami.jpg" height="400" width="300"></div>
+    <div class="box"><img src="mydress.jpg" height="400" width="300"></div>
+    <div class="box"><img src="lokism.jpg" height="400" width="300"></div>
+    <div class="box"><img src="hunter.jpg" height="400" width="300"></div>
+</div>
+
+<h2>Fan Fav Anime</h2>
+
+<div class="container">
+    <div class="box"><img src="kaiju.jpg" height="400" width="300"></div>
+    <div class="box"><img src="jjk2.jpg" height="400" width="300"></div>
+    <div class="box"><img src="howls.jpg" height="400" width="300"></div>
+    <div class="box"><img src="gachi.jpg" height="400" width="300"></div>
+    <div class="box"><img src="gintama.jpg" height="400" width="300"></div>
+    <div class="box"><img src="frieren.jpg" height="400" width="300"></div>
+    <div class="box"><img src="fireforce.jpg" height="400" width="300"></div>
+</div>
+
+
+   
+<center>
+    
+<button id="b2"><a href="secondpage.html">Next</a></button>
+</center>
+</body>
+
+
+
+</html>
