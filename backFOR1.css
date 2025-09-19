@@ -156,11 +156,7 @@ padding: 10px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-<<<<<<< HEAD
     position:fixed;
-=======
-    position: sticky;
->>>>>>> b39a942ccd601eac92c9dc42de54cd2204ba9a70
 }
 
 .logo{
@@ -236,7 +232,3 @@ button a{
     text-decoration: none;
     color: white;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> b39a942ccd601eac92c9dc42de54cd2204ba9a70
